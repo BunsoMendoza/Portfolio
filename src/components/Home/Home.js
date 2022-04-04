@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/Trees.png";
 import Particle from "../Particle";
+import Footer from "../Footer";
 import Home2 from "./Home2";
 import Type from "./Type";
 
@@ -12,7 +13,7 @@ function Home() {
 
         <Container className="home-content">
           <Row>
-            <div style={{ textAlign: "center" }}>
+            <div style={{ textAlign: "left" }}>
               <Type />
             </div>
           </Row>
@@ -22,15 +23,14 @@ function Home() {
         
         
         </Container> 
-        <Row>
-        <Home2 />
-        </Row>
+        
       </Container>
       
-      
-
+    
 
     </section>
+     
+
   );
 }
 
