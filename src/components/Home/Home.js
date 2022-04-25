@@ -17,16 +17,12 @@ function Home() {
               <Type />
             </div>
           </Row>
-         
-
-         
-        
-        
+       
         </Container> 
-        
+         
       </Container>
-      
-    
+   <Container className="trees"></Container>
+   
 
     </section>
      
