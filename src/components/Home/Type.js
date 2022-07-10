@@ -1,25 +1,33 @@
 import React from "react";
-import Typewriter from "typewriter-effect";
+import TypeWriterEffect from "../TypewriterEffect";
 
 function Type() {
+  const typedText = [
+    { id: 1, text: "Hi, I'm Reuel Mendoza,", startDelay: 100},
+    { id: 2, text: "An Entry Level Software Engineer", startDelay: 2200},
+    
+  ];
   return (
-    <Typewriter
-    
-      options={{
-        strings: [
-          "Hello World!",
-          "My name is Reuel Mendoza.",
-          "Welcome to my website!" 
-          
-         
-        ],
-        autoStart: true,
-        loop: true,
-        deleteSpeed: 50,
-        pauseFor: 2500
-      }}
-    
-    />
+    <div>
+      {
+  typedText.map((data) => (
+  
+
+      <TypeWriterEffect
+        textStyle={{
+          fontFamily:
+            'Futura',
+        }}
+        startDelay={data.startDelay}
+        cursorColor="black"
+        text={data.text}
+
+        typeSpeed={50}
+        hideCursorAfterText="true"
+      />
+     ))}
+    </div>
+     
   );
 }
 
